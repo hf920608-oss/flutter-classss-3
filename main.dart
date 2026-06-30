@@ -85,40 +85,16 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      // body: OutlinedButton(
-      //   child: Text('Outline Button'),
-      //   onPressed: () {
-      //   print('this is outline button');
-      //   },
-      //   onLongPress: (){
-      //     print('This is outline Long press');
-      //   },
-      //
-      //
-      //   // Center is a layout widget. It takes a single child and positions it
-      //   // in the middle of the parent.
-      //
-      //      ),
-     // body:  ElevatedButton(
-     //    child: Text('This is Elevated button'),
-     //    onPressed: (){
-     //      print('this is Elevated button');
-     //    },
-     //    onLongPress: (){
-     //      print('This is long press');
-     //    },
-     //  ),
-      
-      body: TextButton(
-        child: Text('click'),
-        onPressed: (){
-          print('this is text button');
-        },
-        onLongPress: (){
-          print('This is lonpresss button');
-        },
+      body: Center(
+        // Center is a layout widget. It takes a single child and positions it
+        // in the middle of the parent.
+        child: Container(
+            width: 100,
+            height: 100,
+            color: Colors.yellow,
+            child: Image.asset('assets/categories-img1.jpg'),
+        ),
       ),
-
 
     );
   }
